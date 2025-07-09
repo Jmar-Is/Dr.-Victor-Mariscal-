@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Víctor Mariscal C. | Medicina Interna</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdfdfd;
+      color: #222;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 180px;
+      background: linear-gradient(90deg, #2b2b2b, #000);
+      animation: fadeInDown 1s ease-out;
+    }
+
+    .header-logo {
+      max-height: 160px;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .roots-section {
+      background-color: #f9f9f9;
+      padding: 40px 20px;
+      border-radius: 12px;
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .roots-section h2 {
+      margin-bottom: 20px;
+    }
+
+    .image-map {
+      display: block;
+      margin: auto;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .card {
+      background-color: #ffffff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+    }
+
+    h2 {
+      border-left: 5px solid #004aad;
+      padding-left: 12px;
+      margin-top: 40px;
+    }
+
+    a {
+      color: #004aad;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      background-color: #f0f0f0;
+      color: #555;
+    }
+
+    .contact-form {
+      background-color: #e9f0fb;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 40px;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #004aad;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #003080;
+    }
+
+    .watermark {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      opacity: 0.85;
+      z-index: 0;
+      pointer-events: none;
+      width: 160px;
+    }
+
+    .cedula-images {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .cedula-images .zoom {
+      position: relative;
+      overflow: hidden;
+      cursor: zoom-in;
+      border-radius: 10px;
+      max-width: 360px;
+    }
+
+    .cedula-images .zoom img {
+      transition: transform 0.4s ease;
+      width: 100%;
+      display: block;
+    }
+
+    .cedula-images .zoom:hover img {
+      transform: scale(2.2) translate(+14%, -40%);
+      z-index: 5;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="/Sello.jpg" alt="Logo Dr. Mariscal" class="header-logo">
+  </header>
+
+  <section>
+    <h2 style="text-align: left">Acerca de mí</h2>
+    <p style="text-align: justify">
+      La medicina interna es la especialidad médica que se dedica a la atención integral del adulto enfermo,
+      enfocándose en la prevención, diagnóstico y tratamiento no quirúrgico de enfermedades que afectan a los órganos internos.
+      Nuestra misión es brindar atención médica de excelencia, basada en la evidencia científica. La visión es ser un referente en
+      el cuidado médico interno con un enfoque humano, ético y actualizado.
+    </p>
+
+    <div class="roots-section">
+      <h2>Escudos de formación</h2>
+      <img src="/escudos.jpg" usemap="#escudosmap" alt="Escudos de formación" class="image-map">
+      <map name="escudosmap">
+        <area shape="rect" coords="0,0,200,300" href="https://www.udg.mx" alt="Universidad de Guadalajara" target="_blank">
+        <area shape="rect" coords="201,0,400,300" href="https://www.cucs.udg.mx" alt="CUCS" target="_blank">
+        <area shape="rect" coords="401,0,600,300" href="https://www.ssaver.gob.mx/" alt="Universidad Veracruzana" target="_blank">
+        <area shape="rect" coords="601,0,800,300" href="https://www.uv.mx" alt="Unidad Médica Veracruz" target="_blank">
+      </map>
+    </div>
+
+    <div class="card">
+      <h2>Búsqueda de cédula profesional</h2>
+      <p>Consulta mis cédulas profesionales en el siguiente enlace:
+        <a href="https://www.gob.mx/cedulaprofesional" target="_blank">Buscar cédula profesional</a>
+      </p>
+      <div class="cedula-images">
+        <div class="zoom">
+          <img src="/Ejemplo.jpg" alt="Cédula General">
+        </div>
+        <div class="zoom">
+          <img src="/Ejemplo 2 .jpg" alt="Cédula Especialidad">
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Derechos del paciente</h2>
+      <ul>
+        <li>Recibir atención médica adecuada.</li>
+        <li>Recibir trato digno y respetuoso.</li>
+        <li>Recibir información suficiente, clara, oportuna y veraz.</li>
+        <li>Otorgar o no su consentimiento válidamente informado.</li>
+        <li>Ser tratado con confidencialidad.</li>
+      </ul>
+
+      <h2>Derechos del médico</h2>
+      <ul>
+        <li>Ejercer su profesión en un ambiente adecuado.</li>
+        <li>Recibir un trato respetuoso por parte del paciente.</li>
+        <li>Contar con los insumos necesarios para su labor.</li>
+        <li>Recibir una remuneración justa.</li>
+        <li>Ser protegido ante agresiones o demandas injustificadas.</li>
+      </ul>
+    </div>
+
+    <div class="contact-form">
+      <h2>Contáctame</h2>
+      <form action="mailto:doctormariscal@hotmail.com" method="POST" enctype="text/plain">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <img src="/Sello.jpg" class="watermark" alt="Marca de Agua Dr. Mariscal">
+
+  <footer>
+    © 2025 Dr. Víctor Mariscal C. - Medicina Interna
+  </footer>
+</body>
+</html>
