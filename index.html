@@ -14,17 +14,17 @@
       scroll-behavior: smooth;
     }
 
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 180px;
-      background: linear-gradient(90deg, #2b2b2b, #000);
-      animation: fadeInDown 1s ease-out;
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+    background: linear-gradient(90deg, #2b2b2b, #000);
+    animation: fadeInDown 1s ease-out;
     }
-
-    .header-logo {
-      max-height: 160px;
+.header-logo {
+    height: 220px;
+    object-fit: contain;
     }
 
     section {
@@ -120,14 +120,14 @@
       background-color: #003080;
     }
 
-    .watermark {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      opacity: 0.85;
-      z-index: 0;
-      pointer-events: none;
-      width: 160px;
+.watermark {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0.4; /* reduced from 0.85 */
+    z-index: 0;
+    pointer-events: none;
+    width: 160px;
     }
 
     .cedula-images {
